@@ -21,7 +21,8 @@ def get_user(user_id:int):
         
         print("CACHE HIT !")
         return{
-            "data": json.loads(cached_check),
+        
+            "data": json.loads(cached_check), #changed load to loads for a bug-fix
             "cached": True,
             "response_time_ms": int((time.time() - start) * 1000)
         }
