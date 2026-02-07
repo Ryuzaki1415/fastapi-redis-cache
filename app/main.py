@@ -1,4 +1,2 @@
-import json
-import time
-from fastapi import APIRouter
-
+from fastapi import FastAPI
+from app.api import router
